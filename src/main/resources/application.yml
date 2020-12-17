@@ -1,0 +1,8 @@
+hazelcast:
+  hosts: localhost:5701
+  login: dev
+  password: dev-pass
+  connectionTimeout: 5s
+  connectionAttemptPeriod: 3s
+  connectionAttemptLimit: 500
+
