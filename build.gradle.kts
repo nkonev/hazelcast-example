@@ -25,6 +25,8 @@ dependencies {
 	implementation("com.hazelcast:hazelcast:${hazelcastVersion}")
 	implementation("com.hazelcast:hazelcast-client:${hazelcastVersion}")
 	implementation("com.hazelcast:hazelcast-spring:${hazelcastVersion}")
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+	implementation("org.springframework.boot:spring-boot-starter-web")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test") {
 		exclude(group = "org.junit.vintage", module = "junit-vintage-engine")

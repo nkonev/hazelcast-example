@@ -12,8 +12,8 @@ class HazelcastCommandlineRunner (val instance: HazelcastInstance) : CommandLine
         instance.config.addMapConfig(
                 MapConfig()
                         .setName(mapName)
-                        .setTimeToLiveSeconds(3600)
-                        .setMaxIdleSeconds(3600)
+                        .setTimeToLiveSeconds(10)
+                        .setMaxIdleSeconds(10)
         )
 
         val map = instance.getMap<String, String>(mapName)

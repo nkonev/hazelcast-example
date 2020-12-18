@@ -3,6 +3,12 @@ services:
 
   hazelcast:
     image: hazelcast/hazelcast:3.12.2
+    environment:
+      - MANCENTER_URL=http://mancenter:8080/hazelcast-mancenter
     ports:
       - 5701:5701
 
+  mancenter:
+    image: hazelcast/management-center:3.12.2
+    ports:
+    - 8090:8080
